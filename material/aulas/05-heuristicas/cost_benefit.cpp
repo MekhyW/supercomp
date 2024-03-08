@@ -39,7 +39,6 @@ void fillBackpack(const vector<Item> &items, double backpack_capacity, vector<It
             backpack_value += item.value;
             selected_items.push_back(item);
         } else {
-            backpack_value += (backpack_capacity - backpack_size) * (item.value / item.size);
             break;
         }
     }
