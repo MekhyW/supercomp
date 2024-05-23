@@ -1,7 +1,7 @@
 #include <omp.h>
 #include <iostream>
 #include <iomanip>
-static long num_steps = 1024l*1024*1024*2;
+static long num_steps = 1024l*1024*102*2;
 
 #define MIN_BLK  1024*1024*256
 
