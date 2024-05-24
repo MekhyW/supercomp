@@ -1,0 +1,17 @@
+thrust::host_vector<T>  // CPU memory
+thrust::device_vector<T>   // GPU memory
+thrust::sequence(first, last, init, step) // fill with init, step
+thrust::fill(first, last, value) // fill with value
+thrust::reduce(iter_begin, iter_end, init, binary_op) // sum(default), max, min, ...
+thrust::transform(iter1_begin, iter1_end, iter2_begin, out_begin, op) // in-place transform
+thrust::sort(iter_begin, iter_end) // sort
+thrust::make_tuple(a, b, c, ...) // create a tuple
+thrust::maximum(a, b) // max
+thrust::minimum(a, b) // min
+
+thrust::constant_iterator<T> // iterator that always returns the same value
+thrust::counting_iterator<T> // iterator that returns a sequence of values
+thrust::make_zip_iterator(thrust::make_tuple(iter1, iter2, ...)) // zip multiple iterators
+
+GPU to CPU memory transfer: thrust::copy(d_vec.begin(), d_vec.end(), h_vec.begin());
+CPU to GPU memory transfer: h_vec = d_vec;
