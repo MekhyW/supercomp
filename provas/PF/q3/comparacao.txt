@@ -1,0 +1,20 @@
+sequencial para 500: Time taken for matrix multiplication: 1.04637 seconds.
+
+2 cores:
+    500: Time taken for matrix multiplication: 0.652381 seconds.
+    750: Time taken for matrix multiplication: 1.05619 seconds.
+    1000: Time taken for matrix multiplication: 5.08715 seconds.
+
+4 cores:
+    500: Time taken for matrix multiplication: 0.231468 seconds.
+    750: Time taken for matrix multiplication: 0.972098 seconds.
+    1000: Time taken for matrix multiplication: 3.10843 seconds.
+
+8 cores:
+    500: Time taken for matrix multiplication: 0.241951 seconds.
+    750: Time taken for matrix multiplication: 0.771967 seconds.
+    1000: Time taken for matrix multiplication: 2.2931 seconds.
+
+
+Conforme visto, os tempos diminuem a medida que o numero de cores aumenta, dentro do esperado
+O valor sequencial, é maior do que qualquer tempo medico para matrix de tamnho 500, resultado dentro do esperado.

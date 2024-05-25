@@ -1,0 +1,10 @@
+24 May 2024 07:31:16 AM
+SEARCH - MPI VERSION
+An example program to search an array.
+The number of data items is 100000.
+estou no rank: 1
+estou no rank: 1 soma= 0
+estou no rank: 1
+estou no rank: 2
+estou no rank: 1 soma= 0
+estou no rank: 2 soma= 0

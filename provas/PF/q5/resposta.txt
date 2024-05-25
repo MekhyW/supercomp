@@ -1,0 +1,25 @@
+Descreva o modelo de memória compartilhada e memória distribuída,
+ressaltando seus prós e contras. Qual modelo cada uma das seguintes bibliotecas usa:
+OpenMP, MPI e Thrust?
+
+
+    parte a: 
+        - para memória distribuída, serão criados vários processos de execução paralela (caso do OpenMP e Thrust), cada processo
+        cuida da sua tarefa e posteriormente é resgato a valor de todas os procesos para dar a reposta final. Neste tipo, o código 
+        roda em apenas um computador !
+        - para memória compartilhada, os procesos estão em servidores (computadores diferentes), podendo usar
+        o recurso computacional de mais de um computador ao mesmo tempo (caso do MPI).
+
+
+Explique o que é escalonamento dinâmico em OpenMP e como ele pode
+ser vantajoso em aplicações de processamento de dados com variabilidade de carga entre as
+iterações.
+
+    parte b:
+        Por default, OpenMP atribui loops com iterações estaticas, quando o o bloco do for paralelo é encontrado,
+        ele atribui a cada thread o conjunto de iterações de loop que tem que executar.
+        Nessa abordagem, quando diferentes iterações gatam tempos diferentes, leva a cada iteração do loop a dormir
+        por alguns momentos, o que não é desejado.
+
+        Optando for sheduling dinamico, quando a thread finaliza, a mesma será atribuida na proxima iteração que ainda não foi 
+        executada, não tendo aqueles brever momentos dormindo.
