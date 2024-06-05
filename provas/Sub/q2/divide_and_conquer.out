@@ -1,0 +1,17 @@
+Thread 12 found 12345 1 times.
+Thread 1 found 12345 3 times.
+Thread 11 found 12345 0 times.
+Thread 10 found 12345 1 times.
+Thread 8 found 12345 1 times.
+Thread 4 found 12345 1 times.
+Thread 0 found 12345 0 times.
+Thread 5 found 12345 0 times.
+Thread 15 found 12345 1 times.
+Thread 2 found 12345 1 times.
+Thread 6 found 12345 0 times.
+Thread 9 found 12345 0 times.
+Thread 13 found 12345 0 times.
+Thread 14 found 12345 0 times.
+Thread 7 found 12345 1 times.
+Thread 3 found 12345 1 times.
+Total count of 12345 in the vector is 11.
